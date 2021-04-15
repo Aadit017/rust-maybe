@@ -1,13 +1,15 @@
 use std::io;
+// io library is the input output library 
 
 fn main() {
     println!("Guess the number!");
-
+    //  remember println! is A macro 
+    // anything with a ! in the end is a macro 
     println!("Please input your guess.");
-
     let mut guess = String::new();
-
-    io::stdin()
+    // mut means mutable if you remember 
+    // :: means that new is being impolemented on 'String'
+    io::stdin() // is we wldnt have dec above then we wld have written std::io::stdin
         .read_line(&mut guess)
         .expect("Failed to read line");
 
