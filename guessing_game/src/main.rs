@@ -14,4 +14,9 @@ fn main() {
         .expect("Failed to read line");
 
     println!("You guessed : {}", guess); 
-} 
+
+    // let just_another_random_variabl="234";
+    // println!(" this is the variable {}", just_another_random_variabl);
+
+}
+ // !crate is just a collection of rust source files 
