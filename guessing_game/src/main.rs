@@ -10,7 +10,7 @@ fn main() {
     let a_secret_number=rand::thread_rng().gen_range(1,101); 
     loop{ 
         println!("Please input your guess.");
-        // println!("the secret number = {}", a_secret_number);
+        println!("the secret number = {}", a_secret_number);
         let mut guess = String::new();
         // mut means mutable if you remember 
         // :: means that new is being impolemented on 'String'
