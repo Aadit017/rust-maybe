@@ -1,7 +1,7 @@
 use std::io;
 // io library is the input output library 
 use rand::Rng;
-
+use std::cmp::Ordering;
 fn main() {
     println!("Guess the number!");
     //  remember println! is A macro 
@@ -17,6 +17,13 @@ fn main() {
         .expect("Failed to read line");
 
     println!("You guessed : {}", guess); 
+    let guess : u32= guess.trim().parse().expect("please enter the variable again ");    
+
+    match guess.cmp(&a_secret_number){
+        Ordering::Less=>println!(" too less"),
+        Ordering::Greater=>println!(" too much "),
+        Ordering::Equal=>println!(" you guessed it rt "),
+    }
 
     // let just_another_random_variabl="234";
     // println!(" this is the variable {}", just_another_random_variabl);
