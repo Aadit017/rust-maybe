@@ -1,6 +1,4 @@
-fn main(){
-    let mut x=5;
-    println!("  the value of x is {} " ,x );
-    x=6;
-    println!(" the value of x is now {}", x);
-}
+fn main() { 
+    let guess:u32 = "42".trim().parse().expect(" this aint a number " ); 
+
+     } 
