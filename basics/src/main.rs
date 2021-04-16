@@ -1,4 +1,6 @@
-fn main() { 
-    let guess:u32 = "42".trim().parse().expect(" this aint a number " ); 
-
+fn main(){ 
+    let tup:(i32 , u32 ,bool) = (-500 , 34 , true) ;
+    let (x,y,z)=tup; 
+    println!("{} {} {}",x,y,z );
      } 
+
